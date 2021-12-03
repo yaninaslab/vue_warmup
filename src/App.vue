@@ -1,18 +1,15 @@
 <template>
   <div id="app">
     <home-page-body></home-page-body>
-    <menu-item></menu-item>
   </div>
 </template>
 
 <script>
 import HomePageBody from './components/HomePageBody.vue'
-import MenuItem from './components/MenuItem.vue'
 export default {
   name: 'App',
   components: {
     HomePageBody,
-    MenuItem,
   }
 }
 </script>
