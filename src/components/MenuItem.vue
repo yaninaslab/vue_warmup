@@ -1,4 +1,5 @@
 <template>
+<div class="menu">
     <div class="menu_card" v-if="price < 100 && price > 1">
         <img src="https://images.unsplash.com/photo-1638425793674-32119fffb3d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt="">
         <h3>{{ title }}</h3>
@@ -9,7 +10,7 @@
     <div v-else>
         <H1>Invalid Price!</H1>
 
-    </div>
+    </div></div>
 </template>
 
 <script>
@@ -28,7 +29,11 @@
 </script>
 
 <style scoped>
-
+.menu {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+}
 .menu_card {
     max-width: 300px;
     border-radius: 15px;
